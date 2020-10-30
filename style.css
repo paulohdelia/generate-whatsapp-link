@@ -24,7 +24,7 @@ body {
   text-align: center;
   position: absolute;
   color: white;
-  top: 7%;
+  top: 3%;
 }
 
 @media (max-width: 600px) {
@@ -244,7 +244,7 @@ body {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: break-all;
   width: 80%;
