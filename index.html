@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <title>Gerador de Link de Whatsapp</title>
+</head>
+<body>
+  <h1 class="title">Gerar Link de Whatsapp</h1>
+  <form class="form">
+    <div class="form__group field">
+      <input type="input" class="form__field whatsapp" placeholder="Número de Whatsapp" name="whatsapp" id="whatsapp" />
+      <label for="whatsapp" class="form__label">Número de Whatsapp</label>
+    </div>
+    <div class="form__group field">
+      <input type="input" class="form__field" placeholder="Mensagem personalizada - Opcional" name="message" id="message" />
+      <label for="message" class="form__label">Mensagem personalizada - Opcional</label>
+    </div>
+    <div class="form-buttons">
+      <button class="btn draw-border generate-link">Gerar Link</button>
+      <button class="btn draw-border clear-form">Limpar Campos</button>
+    </div>
+  </form>
+
+  <div class="generated-link-container">
+    <p class="generated-link"></p>
+    <button class="btn draw-border">Copiar Link</button>
+  </div>
+
+  <script src="/handleInput.js"></script>
+  <script src="/handleButtonClick.js"></script>
+</body>
+</html>
